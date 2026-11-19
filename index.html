@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Portofolio – Kikan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="#home">KIKAN.</a>
+        <nav aria-label="Menu utama">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <div class="wrap hero">
+          <div>
+            <p class="hello">Halo, saya</p>
+            <h1>Nama Kamu</h1>
+            <p class="role">Web Developer &amp; UI Designer</p>
+            <p class="lead">Saya membuat website yang rapi, cepat, dan mudah dipakai. Lihat karya saya atau hubungi saya untuk bekerja sama.</p>
+            <div class="btns">
+              <a class="btn primary" href="#project">Lihat project</a>
+              <a class="btn ghost" href="#contact">Hubungi saya</a>
+            </div>
+          </div>
+          <div class="avatar">
+            <div>NK<img src="foto.jpeg" alt="Foto Nama Kamu" onerror="this.remove()" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="wrap">
+          <h2>Tentang saya</h2>
+          <div class="about">
+            <div>
+              <p>Halo! Perkenalkan, saya seorang pelajar dari SMKN 5 Malang, jurusan Rekayasa Perangkat Lunak (RPL). Saya memiliki ketertarikan dalam bidang teknologi, khususnya pemrograman dan pengembangan website.</p>
+              <p>Saya mempelajari berbagai teknologi seperti HTML, CSS, JavaScript, React, dan MySQL. Saya senang mencoba hal baru serta mengembangkan kemampuan melalui berbagai project.</p>
+              <p>Saya adalah pribadi yang kreatif, disiplin, bertanggung jawab, dan memiliki semangat belajar yang tinggi untuk terus mengembangkan kemampuan di bidang teknologi.</p>
+              <h3 style="font-size: 1.25rem; margin: 28px 0 14px">Keahlian</h3>
+              <ul class="skills">
+                <li>HTML</li>
+                <li>PHP</li>
+                <li>CSS</li>
+                <li>Figma</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <aside class="facts">
+              <h3>Sekilas</h3>
+              <dl>
+                <dt>Lokasi</dt>
+                <dd>Malang, Jawa Timur, Indonesia</dd>
+                <dt>Usia</dt>
+                <dd>16 tahun</dd>
+                <dt>Email</dt>
+                <dd>Kikanayuuh@gmail.com</dd>
+                <dt>Hobi</dt>
+                <dd>Menonton film & Mendengarkan musik</dd>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT -->
+      <section id="project">
+        <div class="wrap">
+          <h2>Project pilihan</h2>
+          <div class="grid">
+            <article class="card">
+              <div class="thumb t1" aria-hidden="true">Toko</div>
+              <div class="body">
+                <h3>Website Toko Online</h3>
+                <p>Toko makanan dengan keranjang, dan pemesanan lewat WhatsApp.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a class="more" href="https://kikanayuuh-coder.github.io/toko_kikan/">Lihat project</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb t2" aria-hidden="true">Profil</div>
+              <div class="body">
+                <h3>Portofolio</h3>
+                <p>Website profil pribadi pelajar yang menampilkan informasi diri, riwayat pendidikan, keterampilan.</p>
+                <div class="tags"><span>React</span><span>Tailwind</span></div>
+                <a class="more" href="https://kikanayuuh-coder.github.io/KikanAyuElisya.github.io/">Lihat project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="wrap">
+          <div class="contact">
+            <div>
+              <h2>Ayo bekerja sama</h2>
+              <div class="links">
+                <a href="mailto:kikanayuuh@gmail.com">kikanayuuh@gmail.com</a>
+                <a href="https://wa.me/6281230665287">WhatsApp: 0812-3066-5287</a>
+                <a href="https://instagram.com/ayukikan3">Instagram: @ayukikan3</a>
+              </div>
+            </div>
+            <form id="kontak" name="contact_form">
+              <input type="hidden" name="sheet_name" value="Sheet1" />
+
+              <div>
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" autocomplete="name" required />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div>
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" required></textarea>
+              </div>
+
+              <button type="submit">Kirim pesan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="tahun">2026</span> Kikan Ayu Elisya. Dibuat dengan HTML dan CSS.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
